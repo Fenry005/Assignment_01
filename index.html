@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment01_HTML</title>
+</head>
+
+<body>
+    <main>
+        <h1>MY RESUME</h1>
+        <nav>
+            <a href="#skill">My skill</a> |
+            <a href="#education">My education</a> |
+            <a href="#contact">My contact</a>
+        </nav>
+
+        <img src="Images/profile.jpg" alt="Banner" width="250" height="300">
+
+        <h3>NGUYEN HOANG KHAM</h3>
+
+        <p> <b>Web Designer</b> </p>
+
+        <section>
+            <p> <b>INFO:</b> </p>
+
+            <div>
+                <p> <img src="Images/location.png" alt="Banner" width="30" height="30">
+                    Address: <i>73/3 Khu vuc 2, NVC, Ninh Kieu, Can Tho</i> </p>
+                <p> <img src="Images/call.png" alt="Banner" width="30" height="30">
+                    Phone: <i>+84 0347739220</i> <br> </p>
+                <p> <img src="Images/mail.png" alt="Ban ner" width="30" height="30">
+                    Email: <i>Hoangkham215@gmail.com</i> </p>
+            </div>
+        </section>
+
+        <section>
+            <p> <b>PROFILE:</b> </p>
+            <p>Studying at FPT University Can Tho through 6 English Levels and 2 specialized semesters,
+                has been participating in many small projects, group activities and events organized for students
+                majoring in software engineering...</p>
+
+            <p> <b>WORK EXPERIENCE:</b> </p>
+            <p>1. <b>2024:</b> <i>Social activities</i></p>
+            <ul style="list-style-type: circle;">
+                <li>Have studied social subjects such as SSL and SSG, have experience in teamwork, communication skills
+                </li>
+                <li>Participate in social activities, sell goods and donate to charity for the disadvantaged</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <p> <b>EDUCATION:</b> </p>
+            <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left;">
+                <tr>
+                    <th>Years</th>
+                    <th>Qualification</th>
+                    <th>Study place</th>
+                </tr>
+                <tr>
+                    <td>2023</td>
+                    <td>University</td>
+                    <td>Can Tho University</td>
+                </tr>
+                <tr>
+                    <td>2020–2023</td>
+                    <td>Hight school education</td>
+                    <td>Vo Van Kiet High school</td>
+                </tr>
+                <tr>
+                    <td>2016–2019</td>
+                    <td>Secondary school education</td>
+                    <td>Truong Vinh Ky Secondary school</td>
+                </tr>
+                <tr>
+                    <td>2011–2015</td>
+                    <td>Primary school education</td>
+                    <td>Nguyen Binh Primary school</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="skill">
+            <p> <b>SKILLS:</b> </p>
+            <p>C (80%) <progress value="80" max="100"></progress> </p>
+            <p></p>English (70%) <progress value="70" max="100"></progress> </p>
+            <p></p>JavaScript (20%) <progress value="20" max="100"></progress> </p>
+        </section>
+
+        <section>
+            <p> <b> HOBBY: </b> </p>
+
+            <p> <img src="images/news.png" alt="Banner" width="30" height="30">
+                <b>News:</b> <i>English.vov.vn</i>
+            </p>
+            <img src="images/englishvov.png" alt="Banner" width="800" height="300">
+            <p> <img src="images/video.png" alt="Banner" width="30" height="30">
+                <b>Video</b> <i>VTV24</i>
+            </p>
+            <video width="640" height="360" controls>
+                <source src="data/bangtuyenngondoclap.mp4" type="video/mp4">
+            </video>
+
+            <p> <img src="images/music.png" alt="Banner" width="30" height="30">
+                <b>Music</b> <i>Muoi nam nhan gian</i>
+            </p>
+            <audio controls>
+                <source src="data/muoinamnhangian.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <section id="contact">
+            <p> <b>CONTACT:</b></p>
+
+            <style>
+                form {
+                    border: 1px solid #333;
+                    padding: 10px;
+                    width: 800px;
+                    border-radius: 0;
+                }
+            </style>
+
+            <form>
+                <form>
+                    <label>Name:</label>
+                    <input type="text" name="name"><br>
+
+                    <label>Phone:</label>
+                    <input type="text" name="phone"><br>
+
+                    <label>Email:</label>
+                    <input type="email" name="email"><br>
+
+                    <label>Gender:</label>
+                    <input type="radio" name="gender" value="male" checked> Male
+                    <input type="radio" name="gender" value="female"> Female<br>
+
+                    <label>Choose interests:</label>
+                    <input type="checkbox" name="interests" value="java"> Java
+                    <input type="checkbox" name="interests" value="csharp"> CSharp
+                    <input type="checkbox" name="interests" value="html"> HTML
+                    <input type="checkbox" name="interests" value="css"> CSS<br>
+
+                    <label>Support:</label>
+                    <select name="support">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="js">JavaScript</option>
+                    </select><br>
+
+                    <label>Content:</label><br>
+                    <textarea name="content" rows="5" cols="60"></textarea><br>
+
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Reset">
+                </form>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© Copyright 2025, Design by Nguyen Hoang Kham</p>
+    </footer>
+
+</body>
+
+</html>
